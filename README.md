@@ -2,5 +2,5 @@
 
 Live example repository for onboarding: triaging a red CI build.
 
-This repo holds a deliberately failing GitHub Actions workflow (`.github/workflows/drill.yml`)
-used for click-through triage practice in the onboarding session.
+Drill workflow: `.github/workflows/drill.yml` — manual trigger, single job `drill-job`,
+prints `DRILL-FAIL` and exits non-zero so the run always ends in failure.
