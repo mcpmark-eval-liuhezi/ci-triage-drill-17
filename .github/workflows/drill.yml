@@ -1,0 +1,13 @@
+name: Drill: Fail on Purpose
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print drill marker
+        run: |
+          echo "DRILL-FAIL"
+          exit 1
